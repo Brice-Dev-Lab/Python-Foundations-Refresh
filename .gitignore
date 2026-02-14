@@ -1,0 +1,108 @@
+# Python project ignore rules (runtime, build, env, and editor state)
+# Keep team-visible configs explicit via allowlists below.
+# Adjust for project-specific tooling as needed.
+
+# Python bytecode and interpreter artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Native extensions
+*.so
+
+# Build and distribution outputs
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs and transient pip state
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Test, coverage, and fuzzing caches
+.tox/
+.nox/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Static analysis caches
+.mypy_cache/
+.pytype/
+.pyre/
+
+# Local environments and secrets
+.env
+.env.*
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# uv (Python package manager)
+.uv/
+uv.lock
+
+# Conda environments and build outputs
+.conda/
+conda-bld/
+conda-meta/
+miniconda*/
+anaconda*/
+*.conda
+*.yaml
+*.yml
+!.pre-commit-config.yaml
+!.github/**/*.yml
+
+# pip metadata
+pip-wheel-metadata/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Runtime logs
+*.log
+
+# IDE/editor state
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Local tooling and lockfiles
+.python-version
+pipenv/
+poetry.lock
+Pipfile.lock
