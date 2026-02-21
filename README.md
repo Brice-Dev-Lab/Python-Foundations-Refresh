@@ -77,6 +77,48 @@ Each participant maintains their own solution directory to:
 
 ---
 
+## 🌿 Git Workflow
+
+To maintain a clean version control history and enable proper code review:
+
+### 1. Create Your Own Branch
+
+Create a branch with a descriptive name:
+
+```bash
+git switch -c feature/your-name-problem-description
+```
+
+Example: `git switch -c feature/brice-list-comprehension`
+
+### 2. Commit Your Changes
+
+Stage and commit your solution:
+
+```bash
+git add .
+git commit -m "Add solution for [problem name]"
+```
+
+### 3. Push to Your Branch
+
+Push your branch to the remote repository:
+
+```bash
+git push origin feature/your-name-problem-description
+```
+
+### 4. Create a Pull Request
+
+- Open a pull request on GitHub
+- Set the **base branch** to `integration`
+- Provide a clear description of your solution
+- Request review from collaborators
+
+This workflow ensures all solutions are reviewed before merging into the integration branch.
+
+---
+
 ## 🧱 Design Principles
 
 - Clarity over cleverness
